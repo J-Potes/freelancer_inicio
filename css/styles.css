@@ -9,26 +9,67 @@
 /*----This part allow us to use "rem" in a scale of 1 rem = 10 px ------*/
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
 }
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
 body{
     font-size: 16px;
     font-family: 'Lexend', sans-serif;
 }
 /*--------------------------------------------------------------------*/
 
-.title{
+h1 {
+    font-size: 3.4rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,h2,h3 {
     text-align: center;
+}
+
+.title{
     color: var(--gray);
-    font-size: 3.8rem;
 }
 
 .title span{
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .container{
     max-width: 100rem;
     margin: 0 auto;
+}
+
+.button{
+    background-color: var(--secundary);
+    color: var(--white);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .button{
+        width: auto;
+    }
 }
 
 .nav-bg{
@@ -62,8 +103,31 @@ body{
     color: var(--black);
 }
 
-@media (min-width: 480px) {
-    body{
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+}
 
-    }
+.hero-content {
+    position: absolute;
+    background-color: rgb( 0 0 0 / 60%);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h2, .hero-content p {
+    color: var(--white);
+}
+
+.location {
+    display: flex;
+    align-items: flex-end;
 }
