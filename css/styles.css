@@ -25,3 +25,31 @@ body{
 .title span{
     font-size: 2rem;
 }
+
+.container{
+    width: 100rem;
+    margin: 0 auto;
+}
+
+.nav-bg{
+    background-color: var(--secundary);
+}
+
+.principal-navegation{
+    display:  flex;
+    justify-content: space-between;
+}
+
+.principal-navegation a {
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.principal-navegation a:hover {
+    background-color: var(--primary);
+    color: var(--black);
+}
+
