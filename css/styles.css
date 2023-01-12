@@ -6,13 +6,15 @@
     --gray: #757575;
 }
 
+/* Global */
+
 /*----This part allow us to use "rem" in a scale of 1 rem = 10 px ------*/
 html{
     font-size: 62.5%;
     box-sizing: border-box;
 }
-/* apply a natural box layout model to all elements, but allowing components to change */
 
+/* Apply a natural box layout model to all elements, but allowing components to change */
 *, *:before, *:after {
 box-sizing: inherit;
 }
@@ -20,31 +22,6 @@ box-sizing: inherit;
 body{
     font-size: 16px;
     font-family: 'Lexend', sans-serif;
-}
-/*--------------------------------------------------------------------*/
-
-h1 {
-    font-size: 3.4rem;
-}
-
-h2 {
-    font-size: 2.4rem;
-}
-
-h3 {
-    font-size: 1.8rem;
-}
-
-h1,h2,h3 {
-    text-align: center;
-}
-
-.title{
-    color: var(--gray);
-}
-
-.title span{
-    font-size: 1.6rem;
 }
 
 .container{
@@ -72,6 +49,38 @@ h1,h2,h3 {
     }
 }
 
+
+/* Fonts */
+
+h1 {
+    font-size: 3.4rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+
+/* Titles */
+
+.title{
+    color: var(--gray);
+}
+
+.title span{
+    font-size: 1.6rem;
+}
+
+
+/* Navegation bar*/
+
 .nav-bg{
     background-color: var(--secundary);
 }
@@ -97,6 +106,9 @@ h1,h2,h3 {
     font-size: 2rem;
     font-weight: bold;
 }
+
+
+/* Hero section */
 
 .principal-navegation a:hover {
     background-color: var(--primary);
@@ -127,7 +139,7 @@ h1,h2,h3 {
     color: var(--white);
 }
 
-.location {
+.hero-content .location {
     display: flex;
     align-items: flex-end;
 }
