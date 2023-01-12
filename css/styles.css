@@ -1,0 +1,27 @@
+:root {
+    --white: #ffffff;
+    --black: rgb(0,0,0);
+    --primary: #FFB2B2;
+    --secundary: #1aa081;
+    --gray: #757575;
+}
+
+/*----This part allow us to use "rem" in a scale of 1 rem = 10 px ------*/
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+}
+/*--------------------------------------------------------------------*/
+
+.title{
+    text-align: center;
+    color: var(--gray);
+    font-size: 3.8rem;
+}
+
+.title span{
+    font-size: 2rem;
+}
