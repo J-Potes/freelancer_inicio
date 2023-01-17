@@ -13,6 +13,19 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+/** Scroll Snap **/
+.shadow,
+.start, 
+.footer{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.start {
+    padding-top: .5rem;
 }
 
 /* Apply a natural box layout model to all elements, but allowing components to change */
